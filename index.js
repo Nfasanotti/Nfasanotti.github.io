@@ -4,8 +4,8 @@ $("#UserName").innerHTML="Hi " +UserName+ "! Press the button to try the quiz";
 }   
 
 $(document).ready(function(){
-$("#Button").click(ButtonClicked(){
-    document.write("It's time to test how well you know your colours");
+$("#Button1").click(ButtonClicked(){
+    console.log("It's time to test how well you know your colours");
 })
 }
 function ChooseColour(){
