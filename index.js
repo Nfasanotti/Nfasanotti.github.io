@@ -5,9 +5,8 @@ $("#UserName").innerHTML="Hi " +UserName+ "! Press the button to try the quiz";
 
 $(document).ready(function(){
 $("#Button1").click(ButtonClicked(){
-    console.log("It's time to test how well you know your colours");
+    $('#NameState').show();
 })
-}
 function ChooseColour(){
     let Red=Math.floor(Math.random()*(256-0+1));
     let Green=Math.floor(Math.random()*(256-0+1));
