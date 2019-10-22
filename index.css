@@ -6,7 +6,7 @@
 img{
     width: 200px;
     height: 200px;
-    align:center: ;
+    box-align:center: ;
     border: 5px solid black;   
 }
 .button1{
