@@ -1,6 +1,7 @@
 <div>
     <h1 class=Title> Hello and <br> welcome to the website</h1>
     <img src="hello.jpg" width="200" height="200" align="middle">
+    <p1 class="Original"> Match me</p1>
 </div>
 
 <p id="UserName"></p>    
@@ -22,9 +23,9 @@
         let Red=Math.floor(Math.random()*(256-0+1));
         let Green=Math.floor(Math.random()*(256-0+1));
         let Blue=Math.floor(Math.random()*(256-0+1));
-        return(Red+","+Green+","+Blue)
+        return(rgb(Red,Green,Blue))
     }
-    let CorrectColour=ChooseColour()
+    let CorrectColour=ChooseColour
     function Game(){
         let Round=1
         for (i=0; i==Round+3; i++){
@@ -44,11 +45,7 @@
         img{
             border: 5px solid black;   
         }
-        .Button1{
-            color: rgb(255,0,0)
+        .Original{
+            background-color: ChooseColour();
         }
-        .CorrectButton{
-            color: rgb(CorrectColour)
-        }
-
     </style>
