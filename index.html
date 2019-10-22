@@ -1,6 +1,6 @@
 <div>
     <h1 class=Title> Hello and <br> welcome to the website</h1>
-    <button class="link"> Click here</button>
+    <button class="Button1"> Click here</button>
     <img src="hello.jpg" width="200" height="200" align="middle">
 </div>
 
@@ -15,17 +15,16 @@
     }
 </style>
 
-<p>
-     id="UserName"
-     id="Button"
-</p>
+<p id="UserName"></p>    
+<p id="Button" onclick="ButtonClicked()">Button1</p>
+
 
 <script>
     var UserName=prompt('Please enter your name below', "Stranger");
     if (UserName!=null){
     document.getElementById("UserName").innerHTML="Hi " +UserName+ "! Press the button to try the quiz";
-    }
-/*    function ButtonClicked(){
-        document.getElementById("Button").innerHTML="It's time to determine which superhero are you most like";
+    }   
+    function ButtonClicked(){
+        document.getElementById("Button").innerHTML="It's time to test how well you know your colours";
     }
 </script>
