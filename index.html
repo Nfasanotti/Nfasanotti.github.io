@@ -1,7 +1,6 @@
 <div>
     <h1 class=Title> Hello and <br> welcome to the website</h1>
     <img src="hello.jpg" width="200" height="200" align="middle">
-    <p1 class="Original"> Match me</p1>
 </div>
 
 <p id="UserName"></p>    
@@ -17,7 +16,7 @@
 </script>
 
 <p id="Button" onclick="ButtonClicked()"><button class="Button1"> Click here</button></p>
-
+<p id="Original">Match me</p>
 <script>
     function ChooseColour(){
         let Red=Math.floor(Math.random()*(256-0+1));
@@ -25,7 +24,8 @@
         let Blue=Math.floor(Math.random()*(256-0+1));
         return(rgb(Red,Green,Blue))
     }
-    let CorrectColour=ChooseColour
+    let CorrectColour=ChooseColour()
+    document.getElementById("Original").style.backgroundColor=rgb(0,225,0);
     function Game(){
         let Round=1
         for (i=0; i==Round+3; i++){
@@ -45,7 +45,7 @@
         img{
             border: 5px solid black;   
         }
-        .Original{
-            background-color: ChooseColour();
+        .button1{
+            color: black;
         }
     </style>
