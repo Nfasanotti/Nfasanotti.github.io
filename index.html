@@ -21,9 +21,11 @@
 </p>
 
 <script>
-    var UserName=prompt('Please enter your name below')
+    var UserName=prompt('Please enter your name below', "Stranger");
+    if (UserName!=null){
     document.getElementById("UserName").innerHTML="Hi " +UserName+ "! Press the button to try the quiz";
+    }
     function ButtonClicked(){
-        document.getElementById("Button").innerHTML="IT's time to determine which superhero are you most like";
+        document.getElementById("Button").innerHTML="It's time to determine which superhero are you most like";
     }
 </script>
