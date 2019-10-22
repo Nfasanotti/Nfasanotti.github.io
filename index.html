@@ -28,6 +28,7 @@
         let Green=Math.floor(Math.random()*(256-0+1));
         return(Red+","+Blue+","+Green)
     }
+    let CorrectColour=ChooseColour()
     function Game(){
         let Round=1
         for (i=0; i==Round+3; i++){
@@ -49,7 +50,7 @@
             border: 5px solid black;   
         }
         .CorrectButton{
-            color: rgb(ChooseColour())
+            color: rgb(CorrectColour)
         }
 
     </style>
