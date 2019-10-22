@@ -3,16 +3,7 @@
     <img src="hello.jpg" width="200" height="200" align="middle">
 </div>
 
-<style>
-    .Title {
-        color: #f7a31b;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
-        text-align: center;
-    }
-        img{
-        border: 5px solid black;
-    }
-</style>
+
 
 <p id="UserName"></p>    
 <p id="Button" onclick="ButtonClicked()"><button class="Button1"> Click here</button></p>
@@ -32,7 +23,6 @@
         let Red=Math.floor(Math.random()*(256-0+1));
         let Blue=Math.floor(Math.random()*(256-0+1));
         let Green=Math.floor(Math.random()*(256-0+1));
-        <button class="CorrectButton">Match Me</button>
         return(Red+","+Blue+","+Green)
     }
     function Game(){
@@ -43,3 +33,20 @@
         }
     }
 </script>
+
+<button class="CorrectButton">Match Me</button>
+
+<style>
+        .Title {
+            color: #f7a31b;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+            text-align: center;
+        }
+        img{
+            border: 5px solid black;   
+        }
+        .CorrectButton{
+            color: rgb(ChooseColour())
+        }
+
+    </style>
