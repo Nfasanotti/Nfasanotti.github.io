@@ -1,7 +1,7 @@
 <div>
     <h1 class=Title> Hello and <br> welcome to the website</h1>
     <button class="link"> Click here</button>
-    <img src="hello.jpg" width="500" height="500">
+    <img src="hello.jpg" width="200" height="200" align="middle">
 </div>
 
 <style>
@@ -11,15 +11,19 @@
         text-align: center;
     }
         img{
-        border: 2px solid #eb0e0e;
-        align-items: center;
+        border: 5px solid black;
     }
 </style>
 
-<p id="UserName"></p>
+<p>
+     id="UserName"
+     id="Button"
+</p>
 
 <script>
     var UserName=prompt('Please enter your name below')
-    document.getElementById("UserName").innerHTML="Hi" +UserName+ "! Press the button to try the quiz"
-    
+    document.getElementById("UserName").innerHTML="Hi " +UserName+ "! Press the button to try the quiz";
+    function ButtonClicked(){
+        document.getElementById("Button").innerHTML="IT's time to determine which superhero are you most like";
+    }
 </script>
