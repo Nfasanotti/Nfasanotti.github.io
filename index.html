@@ -16,10 +16,10 @@
     }
 </style>
 
-<script>
-    system.import {  } from "Scanner";
-        Scanner UserAns =new Scanner(system.in)
-        String name=UserAns.nextLine();
-        console.log("Hello " +name)
+<p id="UserName"></p>
 
+<script>
+    var UserName=prompt('Please enter your name below')
+    document.getElementById("UserName").innerHTML="Hi" +UserName+ "! Press the button to try the quiz"
+    
 </script>
