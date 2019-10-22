@@ -1,10 +1,11 @@
-$(document).ready(function(){
 var UserName=prompt('Please enter your name below', "Stranger");
 if (UserName!=null){
 $("#UserName").innerHTML="Hi " +UserName+ "! Press the button to try the quiz";
 }   
+
+$(document).ready(function(){
 $("#Button").click(ButtonClicked(){
-    console.log("It's time to test how well you know your colours");
+    document.write("It's time to test how well you know your colours");
 })
 }
 function ChooseColour(){
