@@ -3,11 +3,7 @@
     <img src="hello.jpg" width="200" height="200" align="middle">
 </div>
 
-
-
 <p id="UserName"></p>    
-
-
 
 <script>
     var UserName=prompt('Please enter your name below', "Stranger");
@@ -24,9 +20,9 @@
 <script>
     function ChooseColour(){
         let Red=Math.floor(Math.random()*(256-0+1));
-        let Blue=Math.floor(Math.random()*(256-0+1));
         let Green=Math.floor(Math.random()*(256-0+1));
-        return(Red+","+Blue+","+Green)
+        let Blue=Math.floor(Math.random()*(256-0+1));
+        return(Red+","+Green+","+Blue)
     }
     let CorrectColour=ChooseColour()
     function Game(){
@@ -35,7 +31,6 @@
             Let ButtonName=("Buton"+i)
             <p id="Button" onclick="ButtonCheck()"><button class="ButtonName">?</button></p>
         }
-    }
 </script>
 
 <button class="CorrectButton">Match Me</button>
@@ -48,6 +43,9 @@
         }
         img{
             border: 5px solid black;   
+        }
+        .Button1{
+            color: rgb(255,0,0)
         }
         .CorrectButton{
             color: rgb(CorrectColour)
