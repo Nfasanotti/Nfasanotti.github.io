@@ -33,8 +33,8 @@ $("#Start").click(function(){
         // let quiz=("json")
         // $("span").text(quiz)
     // }
-})
-})
+//})
+//})
 
 
 
