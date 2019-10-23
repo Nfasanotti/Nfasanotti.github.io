@@ -3,6 +3,14 @@
 let src="https://opentdb.com/api.php?amount=10&category=11&difficulty=medium"
 $(document).ready(function(){
     $("#Original").hide();
+    $("#A").hide();
+    $("#B").hide();
+    $("#C").hide();
+    $("#D").hide();
+    $("#ButtonA").hide();
+    $("#ButtonB").hide();
+    $("#ButtonC").hide();
+    $("#ButtonD").hide();
     $('#NameEntered').click(function(){
         var Name=$('#UserName').val();
         console.log($("#UserName"))
@@ -14,10 +22,12 @@ $(document).ready(function(){
 QuestionNum=0
 $("#Start").click(function(){
     $.get(src, function(data){
-        $("#Question").text(data.results[QuestionNum].question)
-        $("#A").text(data.results[QuestionNum].correct_answers)
+        $("#Question").text(data.results[QuestionNum].question);
+        $("#A").text(data.results[QuestionNum].correct_answers);
 
-        $("#Question").show()
+        $("#Question").show();
+        $("label").show();
+        $("button").show();
     
     })
 })
