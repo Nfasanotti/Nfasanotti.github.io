@@ -11,8 +11,10 @@ $(document).ready(function(){
 
 
 $("#Start").click(function(){
-    $.getJSON("https://opentdb.com/api.php?amount=10&category=11&difficulty=medium"), function(json){
-        console.log(json);
+    $("#Original").css("background-color",rgb(255,0,0))
+
+
+
     }
 })
 })
