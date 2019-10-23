@@ -17,7 +17,7 @@ $(document).ready(function(){
         }
     })
 })
-/* $('#NameState').hide();
+ $('#NameState').hide();
 
 $("#Button1").click(ButtonClicked(){
     $('#NameState').show();
