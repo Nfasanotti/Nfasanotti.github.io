@@ -17,19 +17,3 @@ $(document).ready(function(){
         }
     })
 })
-
-
-$('#NameState').hide();
-
-$("#Button1").click(ButtonClicked(){
-    $('#NameState').show();
-})
-function ChooseColour(){
-    let Red=Math.floor(Math.random()*(256-0+1));
-    let Green=Math.floor(Math.random()*(256-0+1));
-    let Blue=Math.floor(Math.random()*(256-0+1));
-    return(rgb(Red,Green,Blue))
-}
-let CorrectColour=ChooseColour()
-$("#Original").style.backgroundColor="red"
-})
