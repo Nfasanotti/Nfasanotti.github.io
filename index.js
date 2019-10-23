@@ -15,9 +15,7 @@ $("#Start").click(function(){
     $("#Original").show()
     $.getJSON("https://opentdb.com/api.php?amount=10&category=11&difficulty=medium"), function(json){
         let quiz=("json")
-
-
-
+        $("span").text(quiz)
     }
 })
 })
