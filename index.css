@@ -2,11 +2,13 @@
     color: #f7a31b;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
     text-align: center;
+    font: outline solid black;
 }
 img{
     width: 200px;
     height: 200px;
-    box-align:center;
+    margin-left: auto;
+    margin-right: auto;
     border: 5px solid black;   
 }
 .button1{
