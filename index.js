@@ -11,7 +11,7 @@ $("#UserName").innerHTML="Hi " +UserName+ "! Press the button to try the quiz";
 */
 $(document).ready(function(){
     $('#NameEntered').click(function(){
-        var Name=$("#UserName").val();
+        var Name=$('#UserName').val();
         if(Name!=null){
             alert("Hi " +UserName+ "! Press the button to try the quiz");
         }
