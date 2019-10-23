@@ -7,7 +7,7 @@ $(document).ready(function(){
         var Name=$('#UserName').val();
         console.log($("#UserName"))
         if(Name!=null){
-            $("span").text("Hi " +Name+ "! Press the button to try the quiz");
+            $("#Welcome").text("Hi " +Name+ "! Press the button to try the quiz");
         }
     })
 
