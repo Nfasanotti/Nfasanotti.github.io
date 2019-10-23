@@ -1,14 +1,5 @@
 
 
-
-/*var UserName=$(":input");
-$('#HiMessage').text("Hi "+UserName+" ! Press the button to try the quiz")
-
-var UserName=prompt('Please enter your name below', "Stranger");
-if (UserName!=null){
-$("#UserName").innerHTML="Hi " +UserName+ "! Press the button to try the quiz";
-}   
-*/
 $(document).ready(function(){
     $('#NameEntered').click(function(){
         var Name=$('#UserName').val();
@@ -17,4 +8,20 @@ $(document).ready(function(){
             alert("Hi " +Name+ "! Press the button to try the quiz");
         }
     })
+
+function ChooseColour(){
+    let Red=Math.floor(Math.random()*(256-0+1));
+    let Green=Math.floor(Math.random()*(256-0+1));
+    let Blue=Math.floor(Math.random()*(256-0+1));
+    return(rgb(Red,Green,Blue))
+}
+
+$("#Start").click(function(){
+    $("#Original").css("color","red");
 })
+
+
+
+})
+
+
