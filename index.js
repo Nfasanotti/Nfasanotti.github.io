@@ -16,7 +16,7 @@ $("#Start").click(function(){
     $("#Original").show()
     var api_Url="https://opentdb.com/api.php?amount=10&category=11&difficulty=medium"
     $.ajax({
-        url=api_Url,
+        url: api_Url,
         dataType:'json',
         success: function(result){
             console.log(esult)
