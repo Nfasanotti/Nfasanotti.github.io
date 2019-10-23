@@ -1,10 +1,10 @@
 
-$('#NameEntered').click(function({
+$('#NameEntered').click(function(){
     var Name=$("#UserName").val();
     if(Name!=null){
         alert("Hi " +UserName+ "! Press the button to try the quiz");
     }
-}))
+})
 
 /*var UserName=$(":input");
 $('#HiMessage').text("Hi "+UserName+" ! Press the button to try the quiz")
