@@ -6,7 +6,7 @@ $(document).ready(function(){
         var Name=$('#UserName').val();
         console.log($("#UserName"))
         if(Name!=null){
-            alert("Hi " +Name+ "! Press the button to try the quiz");
+            $("span").text("Hi " +Name+ "! Press the button to try the quiz");
         }
     })
 
