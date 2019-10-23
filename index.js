@@ -1,5 +1,6 @@
 
 
+
 $(document).ready(function(){
     $("#Original").hide();
     $('#NameEntered').click(function(){
@@ -13,9 +14,17 @@ $(document).ready(function(){
 
 $("#Start").click(function(){
     $("#Original").show()
-    $.ajax(settings).done(function(response){
-        console.log(response);
-        console.log("question")
+    $.get("https://opentdb.com/api.php?amount=10&category=11&difficulty=medium", function(data){
+        $(#Quiz).text(data)
+    })
+
+
+
+
+
+    // $.ajax(settings).done(function(response){
+    //     console.log(response);
+    //     console.log("question")
     })
 
 
