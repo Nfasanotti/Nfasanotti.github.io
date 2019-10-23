@@ -14,7 +14,7 @@ $(document).ready(function(){
 
 $("#Start").click(function(){
     $("#Original").show()
-    var api_Url="https://opentdb.com/api.php?amount=10&category=11&difficulty=medium"
+/*    var api_Url="https://opentdb.com/api.php?amount=10&category=11&difficulty=medium"
     alert(api_Url)
     $.ajax({
         url: api_Url,
@@ -22,7 +22,7 @@ $("#Start").click(function(){
         dataType:'json',
         success: function(result){
             console.log(esult)
-        }
+/        }
     })
 
 /*    $.get("https://opentdb.com/api.php?amount=10&category=11&difficulty=medium", function(data){
