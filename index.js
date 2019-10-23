@@ -14,9 +14,9 @@ $(document).ready(function(){
 
 $("#Start").click(function(){
     $("#Original").show()
-    $.get("https://opentdb.com/api.php?amount=10&category=11&difficulty=medium", function(data){
-        $("#Quiz").text(data)
-    })
+ /*   $.get("https://opentdb.com/api.php?amount=10&category=11&difficulty=medium", function(data){
+      $("#Quiz").text(data)
+*/    })
 
 
 
