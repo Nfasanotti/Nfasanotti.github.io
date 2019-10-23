@@ -1,6 +1,6 @@
 
 
-
+src="https://opentdb.com/api.php?amount=10&category=11&difficulty=medium"
 $(document).ready(function(){
     $("#Original").hide();
     $('#NameEntered').click(function(){
@@ -14,9 +14,18 @@ $(document).ready(function(){
 
 $("#Start").click(function(){
     $("#Original").show()
-    $.get("https://opentdb.com/api.php?amount=10&category=11&difficulty=medium", function(data){
-    alert(data)
+    var api_Url="https://opentdb.com/api.php?amount=10&category=11&difficulty=medium"
+    $.ajax({
+        url=api_Url,
+        dataType:'json',
+        success: function(result){
+            console.log(esult)
+        }
     })
+
+/*    $.get("https://opentdb.com/api.php?amount=10&category=11&difficulty=medium", function(data){
+    alert(data)
+*/    })
 
 
 
