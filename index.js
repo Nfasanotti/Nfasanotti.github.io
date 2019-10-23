@@ -1,8 +1,12 @@
-var UserName=prompt('Please enter your name below', "Stranger");
+
+var UserName=$(":input");
+$('#HiMessage').text("Hi "+UserName+" ! Press the button to try the quiz")
+
+/*var UserName=prompt('Please enter your name below', "Stranger");
 if (UserName!=null){
 $("#UserName").innerHTML="Hi " +UserName+ "! Press the button to try the quiz";
 }   
-
+*/
 $(document).ready(function(){
     $('#NameState').hide();
 $("#Button1").click(ButtonClicked(){
