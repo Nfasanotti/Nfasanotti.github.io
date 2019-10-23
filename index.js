@@ -17,7 +17,7 @@ function ChooseColour(){
 }
 
 $("#Start").click(function(){
-    $("#Original").css("color","red");
+    $("#Original").css("background-color","red");
 })
 
 
