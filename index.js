@@ -15,6 +15,7 @@ QuestionNum=0
 $("#Start").click(function(){
     $.get(src, function(data){
         $("#Question").text(data.results[QuestionNum].question)
+        $("#A").text(data.results[QuestionNum].correct_answers)
 
         $("#Question").show()
     
