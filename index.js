@@ -45,7 +45,7 @@ $("#Start").click(function(){
         // $("span").text(quiz)
     // }
 //})
-})
+// })
 
 
 
