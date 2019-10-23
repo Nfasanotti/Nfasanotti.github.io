@@ -16,7 +16,9 @@ $(document).ready(function(){
             alert("Hi " +UserName+ "! Press the button to try the quiz");
         }
     })
-    $('#NameState').hide();
+})
+ /*   $('#NameState').hide();
+
 $("#Button1").click(ButtonClicked(){
     $('#NameState').show();
 })
