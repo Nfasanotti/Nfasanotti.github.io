@@ -12,6 +12,7 @@ $("#UserName").innerHTML="Hi " +UserName+ "! Press the button to try the quiz";
 $(document).ready(function(){
     $('#NameEntered').click(function(){
         var Name=$('#UserName').val();
+        console.log($("#UserName"))
         if(Name!=null){
             alert("Hi " +UserName+ "! Press the button to try the quiz");
         }
