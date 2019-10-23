@@ -13,10 +13,17 @@ $(document).ready(function(){
 
 $("#Start").click(function(){
     $("#Original").show()
-    $.getJSON("https://opentdb.com/api.php?amount=10&category=11&difficulty=medium"), function(json){
-        let quiz=("json")
-        $("span").text(quiz)
-    }
+    $.ajax(settings).done(function(response){
+        console.log(response);
+        console.log("question")
+    })
+
+
+
+    // $.getJSON("https://opentdb.com/api.php?amount=10&category=11&difficulty=medium"), function(json){
+        // let quiz=("json")
+        // $("span").text(quiz)
+    // }
 })
 })
 
