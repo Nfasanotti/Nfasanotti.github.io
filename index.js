@@ -17,15 +17,12 @@ function ChooseColour(){
 }
 
 $("#Start").click(function(){
-    $("#Original").css("background-color","red");
+    $("#Original").css("background-color","rgb(ChooseColour()");
 })
 
-$.ajax({
-    url: https://opentdb.com/api.php?amount=10&category=11&difficulty=medium
-    success: function(){
-        console.log(https://opentdb.com/api.php?amount=10&category=11&difficulty=medium)
-        
-    }
+$.getJSON("https://opentdb.com/api.php?amount=10&category=11&difficulty=medium"), function(json){
+    console.log(json);
+}
 
 })
 
