@@ -6,9 +6,14 @@
 img{
     width: 200px;
     height: 200px;
-    box-align:center: ;
+    box-align:center;
     border: 5px solid black;   
 }
 .button1{
     color: black;
+}
+
+div{
+    width: 100px;
+
 }
