@@ -14,7 +14,8 @@ $(document).ready(function(){
 QuestionNum=0
 $("#Start").click(function(){
     $.get(src, function(data){
-        $("#Question").text(data.results[QuestionNum])        
+        $("#Question").text(data.results[QuestionNum].questions)
+                
         $("#Question").show()
     
     })
