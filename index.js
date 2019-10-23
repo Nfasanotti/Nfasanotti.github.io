@@ -1,10 +1,5 @@
 
-$('#NameEntered').click(function(){
-    var Name=$("#UserName").val();
-    if(Name!=null){
-        alert("Hi " +UserName+ "! Press the button to try the quiz");
-    }
-})
+
 
 /*var UserName=$(":input");
 $('#HiMessage').text("Hi "+UserName+" ! Press the button to try the quiz")
@@ -15,6 +10,12 @@ $("#UserName").innerHTML="Hi " +UserName+ "! Press the button to try the quiz";
 }   
 */
 $(document).ready(function(){
+    $('#NameEntered').click(function(){
+        var Name=$("#UserName").val();
+        if(Name!=null){
+            alert("Hi " +UserName+ "! Press the button to try the quiz");
+        }
+    })
     $('#NameState').hide();
 $("#Button1").click(ButtonClicked(){
     $('#NameState').show();
