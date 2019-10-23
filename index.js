@@ -23,8 +23,8 @@ QuestionNum=0
 $("#Start").click(function(){
     $.get(src, function(data){
         $("#Question").text(data.results[QuestionNum].question);
-        var Answers=$("#Answers").txt(data.results[QuestionNum].correct_answer);
-        Answers+=$("#Answers").txt(data.results[QuestionNum].incorrect_answer);
+        var Answers=$("#Answers").text(data.results[QuestionNum].correct_answer);
+        Answers+=$("#Answers").text(data.results[QuestionNum].incorrect_answer);
         console.log(Answers)
         $("#Question").show();
         $("label").show();
