@@ -28,7 +28,8 @@ $("#Start").click(function(){
          $("#Question").html(data.results[QuestionNum].question);
          let Ans=IncorrectAns;
          Ans.push(CorrectAns);
-         console.log(Ans)
+         Ans.join(",   ")
+         console.log(Ans);
 
 
          $("#display_ans").html(Ans);
