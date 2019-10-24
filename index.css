@@ -3,7 +3,7 @@
     color: #f7a31b;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
     text-align: center;
-    font: outline solid black;
+    text-shadow: 4px solid black;
 }
 img{
     width: 200px;
