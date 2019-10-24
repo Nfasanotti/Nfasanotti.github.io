@@ -48,7 +48,6 @@ $("#Start").click(function(){
                 Score+=1
              }else{
                  $("#ButtonA").css({"background-color":"#ff0303"})
-                 return;
              }
          })
          $("#ButtonB").click(function(){
@@ -57,7 +56,6 @@ $("#Start").click(function(){
                Score+=1
             }else{
                 $("#ButtonB").css({"background-color":"#ff0303"})
-                return;
             }
         })
         $("#ButtonC").click(function(){
@@ -66,7 +64,6 @@ $("#Start").click(function(){
                Score+=1
             }else{
                 $("#ButtonC").css({"background-color":"#ff0303"})
-                return;
             }
         })
         $("#ButtonD").click(function(){
@@ -75,7 +72,6 @@ $("#Start").click(function(){
                Score+=1
             }else{
                 $("#ButtonD").css({"background-color":"#ff0303"})
-                return;
             }
         })        
          })
