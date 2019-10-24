@@ -48,6 +48,7 @@ $("#Start").click(function(){
                 Score+=1
              }else{
                  $("#ButtonA").css({"background-color":"#ff0303"})
+                 return;
              }
          })
          $("#ButtonB").click(function(){
@@ -56,6 +57,7 @@ $("#Start").click(function(){
                Score+=1
             }else{
                 $("#ButtonB").css({"background-color":"#ff0303"})
+                return;
             }
         })
         $("#ButtonC").click(function(){
@@ -64,6 +66,7 @@ $("#Start").click(function(){
                Score+=1
             }else{
                 $("#ButtonC").css({"background-color":"#ff0303"})
+                return;
             }
         })
         $("#ButtonD").click(function(){
@@ -72,16 +75,13 @@ $("#Start").click(function(){
                Score+=1
             }else{
                 $("#ButtonD").css({"background-color":"#ff0303"})
+                return;
             }
         })        
- //        Ans=shuffle(Ans);
- //        Ans=Ans.join(",  ");
          })
-        //  Ans.join("     ");
-//         var i;
-        //  for(i=0; i<Ans.length; i++){
-        //     $("#display_ans").html(Ans[i])
-        //     console.log(Ans[i]+"  ")
+    }
+    else{
+        $("#final_score").text("Your final score is: "+Score)
     }
 
 
