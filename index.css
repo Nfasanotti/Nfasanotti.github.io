@@ -1,11 +1,9 @@
-body{
-    background-color: #ffc800;
-}
+
 .Title {
-    color: red;
+    color: #f7a31b;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
     text-align: center;
-    text-shadow: 3px black;;
+    font: outline solid black;
 }
 img{
     width: 200px;
