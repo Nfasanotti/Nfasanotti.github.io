@@ -29,7 +29,7 @@ $("#Start").click(function(){
         $("#Question").show();
         $("label").show();
         $("button").show();
-    
+        QuestionNum+=1    
     })
 })
 })
