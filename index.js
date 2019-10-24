@@ -27,19 +27,29 @@ $("#Start").click(function(){
             let IncorrectAns=(data.results[QuestionNum].incorrect_answers);
          $("#Question").html(data.results[QuestionNum].question);
          let Ans=IncorrectAns;
-         Ans.push(CorrectAns)
-         Ans.join(", ")
-        //  var ArrayAns=jQuery.makeArray(Ans);
+         Ans.push(CorrectAns);
          console.log(Ans)
-         $("div").text(Ans)
+
+
+         $("#display_ans").html(Ans);
          $("#Question").show();
          $("label").show();
          $("button").show();
          QuestionNum+=1    
-        })
+ //        Ans=shuffle(Ans);
+ //        Ans=Ans.join(",  ");
+         })
+        //  Ans.join("     ");
+//         var i;
+        //  for(i=0; i<Ans.length; i++){
+        //     $("#display_ans").html(Ans[i])
+        //     console.log(Ans[i]+"  ")
     }
+
+
+        })
 })
-})
+
 
 
 
