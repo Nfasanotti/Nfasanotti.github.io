@@ -11,6 +11,7 @@ $(document).ready(function(){
     $("#ButtonB").hide();
     $("#ButtonC").hide();
     $("#ButtonD").hide();
+    $("#redo").hide()
     $('#NameEntered').click(function(){
         var Name=$('#UserName').val();
         console.log($("#UserName"))
@@ -78,6 +79,7 @@ $("#Start").click(function(){
     }
     else{
         $("#final_score").text("Your final score is: "+Score)
+        $("#redo").show()
     }
 
 
