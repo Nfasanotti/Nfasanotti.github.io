@@ -46,7 +46,7 @@ $("#Start").click(function(){
                  $("#ButtonA").css({"background-color":"#ff0303"})
              }
          })
-         $("#ButtoBA").click(function(){
+         $("#ButtonB").click(function(){
             if (Ans[0]==CorrectAns){
                $("#ButtonB").css({"background-color":"#4aff03"}) 
                Score+=1
