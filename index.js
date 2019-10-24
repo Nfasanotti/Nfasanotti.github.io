@@ -22,10 +22,10 @@ $(document).ready(function(){
 QuestionNum=0
 Score=0
 $("#Start").click(function(){
-    $("#ButtonA").css({"background-color":"grey"})
-    $("#ButtonB").css({"background-color":"grey"})
-    $("#ButtonC").css({"background-color":"grey"})
-    $("#ButtonD").css({"background-color":"grey"})
+    $("#ButtonA").css({"background-color":"lightgray"})
+    $("#ButtonB").css({"background-color":"lightgray"})
+    $("#ButtonC").css({"background-color":"lightgray"})
+    $("#ButtonD").css({"background-color":"lightgray"})
     if (QuestionNum<10) {
         $.get(src, function(data){
             let CorrectAns=(data.results[QuestionNum].correct_answer);
