@@ -51,7 +51,7 @@ $("#Start").click(function(){
              }
          })
          $("#ButtonB").click(function(){
-            if (Ans[0]==CorrectAns){
+            if (Ans[1]==CorrectAns){
                $("#ButtonB").css({"background-color":"#4aff03"}) 
                Score+=1
             }else{
@@ -59,7 +59,7 @@ $("#Start").click(function(){
             }
         })
         $("#ButtonC").click(function(){
-            if (Ans[0]==CorrectAns){
+            if (Ans[2]==CorrectAns){
                $("#ButtonC").css({"background-color":"#4aff03"}) 
                Score+=1
             }else{
@@ -67,7 +67,7 @@ $("#Start").click(function(){
             }
         })
         $("#ButtonD").click(function(){
-            if (Ans[0]==CorrectAns){
+            if (Ans[3]==CorrectAns){
                $("#ButtonD").css({"background-color":"#4aff03"}) 
                Score+=1
             }else{
