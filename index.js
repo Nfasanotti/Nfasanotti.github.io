@@ -35,7 +35,7 @@ $("#Start").click(function(){
          Ans.push(CorrectAns);
          console.log(Ans);
          Ans.sort()
-         Ans.join(",              ")
+         Ans.join(",  ")
 
          $("#display_ans").html(Ans);
          $("#Question").show();
