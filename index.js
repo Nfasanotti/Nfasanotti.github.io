@@ -23,9 +23,11 @@ QuestionNum=0
 $("#Start").click(function(){
     $.get(src, function(data){
         $("#Question").text(data.results[QuestionNum].question);
-        var Answers=[$("#Answers").text(data.results[QuestionNum].correct_answer)];
-        Answers+=[$("#Answers").text(data.results[QuestionNum].incorrect_answer)];
-        console.log(Answers)
+        $("#CAnswers").text(data.results[QuestionNum].correct_answer);
+        $("#ICAnswers").text(data.results[QuestionNum].incorrect_answer);
+        let Ans=CAnswers+ICAnswers;
+        var ArrayAns=jquery.makeArray(Ans);
+        console.log(ArrayAns)
         $("#Question").show();
         $("label").show();
         $("button").show();
