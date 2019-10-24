@@ -20,6 +20,7 @@ $(document).ready(function(){
     })
 
 QuestionNum=0
+Score=0
 $("#Start").click(function(){
     if (QuestionNum<10) {
         $.get(src, function(data){
@@ -28,15 +29,47 @@ $("#Start").click(function(){
          $("#Question").html(data.results[QuestionNum].question);
          let Ans=IncorrectAns;
          Ans.push(CorrectAns);
-         Ans.join(",   ")
          console.log(Ans);
-
+         Ans.sort()
+         Ans.join(",   ")
 
          $("#display_ans").html(Ans);
          $("#Question").show();
          $("label").show();
          $("button").show();
-         QuestionNum+=1    
+         QuestionNum+=1 
+         $("#ButtonA").click(function(){
+             if (Ans[0]==CorrectAns){
+                $("#ButtonA").css({"background-color":"#4aff03"}) 
+                score+=1
+             }else{
+                 $("#ButtonA").css({"background-color":"#ff0303"})
+             }
+         })
+         $("#ButtoBA").click(function(){
+            if (Ans[0]==CorrectAns){
+               $("#ButtonB").css({"background-color":"#4aff03"}) 
+               score+=1
+            }else{
+                $("#ButtonB").css({"background-color":"#ff0303"})
+            }
+        })
+        $("#ButtonC").click(function(){
+            if (Ans[0]==CorrectAns){
+               $("#ButtonC").css({"background-color":"#4aff03"}) 
+               score+=1
+            }else{
+                $("#ButtonC").css({"background-color":"#ff0303"})
+            }
+        })
+        $("#ButtonD").click(function(){
+            if (Ans[0]==CorrectAns){
+               $("#ButtonD").css({"background-color":"#4aff03"}) 
+               score+=1
+            }else{
+                $("#ButtonD").css({"background-color":"#ff0303"})
+            }
+        })        
  //        Ans=shuffle(Ans);
  //        Ans=Ans.join(",  ");
          })
