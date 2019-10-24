@@ -27,7 +27,7 @@ $("#Start").click(function(){
          $("#CAnswers").text(data.results[QuestionNum].correct_answer);
          $("#ICAnswers").text(data.results[QuestionNum].incorrect_answer);
          let Ans=CAnswers+ICAnswers;
-         var ArrayAns=jquery.makeArray(Ans);
+         var ArrayAns=jQuery.makeArray(Ans);
          console.log(ArrayAns)
          $("#Question").show();
          $("label").show();
