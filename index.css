@@ -3,6 +3,7 @@ body{
     background-color: #ffa89e; 
     border-style: groove;
     border-color:#ff1a00 ;
+    margin-left: 15px;
 
 }
 
@@ -22,6 +23,7 @@ img{
 }
 .button1{
     color: black;
+    margin-left: 15px;
 }
 #ButtonA{
     margin-left:15px;
@@ -42,4 +44,19 @@ img{
     margin-left:15px;
     margin-right:15px; 
     padding-left: 15px;
+}
+p{
+    margin-left: 15px;
+}
+button{
+    margin-left: 15px;
+}
+form{
+    margin-left: 15px;
+}
+h1{
+    margin-left: 15px;
+}
+span{
+    margin-left: 15px;
 }
