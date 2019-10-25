@@ -87,14 +87,11 @@ function quiz(){
      }
      else{
           $("#final_score").text("Your final score is: "+Score)
-          $("#redo").show()
         }
          })
     })
     }
     quiz()
-    $("redo").click(function(){
-       quiz()
     })
     })
 
