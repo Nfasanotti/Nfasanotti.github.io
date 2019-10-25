@@ -1,11 +1,13 @@
 
 body{
-    /* background-color: #ffe270; */
+    background-color: #ffa89e; 
+    border-style: groove;
+    border-color:#ff1a00 ;
 
 }
 
 .Title {
-    color:#ffaa00;
+    color:#ff1a00;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
     text-align: center;
     text-shadow: 4px solid black;
