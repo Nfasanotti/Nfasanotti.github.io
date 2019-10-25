@@ -19,16 +19,26 @@ $(document).ready(function(){
             $("#message").text("Hi " +Name+ "! Press the button to try the quiz");
         }
     })
-
+function quiz(){
 QuestionNum=0
 Score=0
+$.get(src, function(data){
 $("#Start").click(function(){
-    $("#ButtonA").css({"background-color":"lightgray"})
-    $("#ButtonB").css({"background-color":"lightgray"})
-    $("#ButtonC").css({"background-color":"lightgray"})
-    $("#ButtonD").css({"background-color":"lightgray"})
+    function reset(){
+        $("#ButtonA").css({"background-color":"lightgray"})
+        $("#ButtonB").css({"background-color":"lightgray"})
+        $("#ButtonC").css({"background-color":"lightgray"})
+        $("#ButtonD").css({"background-color":"lightgray"})
+    }
+    reset()
+    function undo(){
+        $("#ButtonA").unbind()
+        $("#ButtonB").unbind()
+        $("#ButtonC").unbind()
+        $("#ButtonD").unbind()
+
+    }
     if (QuestionNum<10) {
-        $.get(src, function(data){
             let CorrectAns=(data.results[QuestionNum].correct_answer);
             let IncorrectAns=(data.results[QuestionNum].incorrect_answers);
          $("#Question").html(data.results[QuestionNum].question);
@@ -36,49 +46,52 @@ $("#Start").click(function(){
          Ans.push(CorrectAns);
          console.log(Ans);
          Ans.sort()
-         Ans.join(",  ")
+        
 
-         $("#display_ans").html(Ans);
+         $("#display_ans").html (Ans.join(",  "));
          $("#Question").show();
          $("label").show();
          $("button").show();
          $("#ButtonA").click(function(){
+            reset()
              if (Ans[0]==CorrectAns){
                 $("#ButtonA").css({"background-color":"#4aff03"}) 
                 Score+=1
              }else{
                  $("#ButtonA").css({"background-color":"#ff0303"})
-            return;
-             }
+                }
+                undo()
          })
          $("#ButtonB").click(function(){
+            reset()
             if (Ans[1]==CorrectAns){
                $("#ButtonB").css({"background-color":"#4aff03"}) 
                Score+=1
             }else{
                 $("#ButtonB").css({"background-color":"#ff0303"})
-            return;
             }
+            undo()
         })
         $("#ButtonC").click(function(){
+            reset()
             if (Ans[2]==CorrectAns){
                $("#ButtonC").css({"background-color":"#4aff03"}) 
                Score+=1
             }else{
                 $("#ButtonC").css({"background-color":"#ff0303"})
-            return;
             }
+        undo()
         })
         $("#ButtonD").click(function(){
+            reset()
             if (Ans[3]==CorrectAns){
                $("#ButtonD").css({"background-color":"#4aff03"}) 
                Score+=1
             }else{
                 $("#ButtonD").css({"background-color":"#ff0303"})
-            return;
             }
+            undo()
         })        
-         })
          QuestionNum+=1 
     }
     else{
@@ -89,6 +102,10 @@ $("#Start").click(function(){
 
         })
 })
+}
+quiz()
+})
+
 
 
 
